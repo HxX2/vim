@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/root/1337/C00/ex06'
+let g:netrw_dirhist_7='/root/1337/C00'
+let g:netrw_dirhist_6='/root/1337/C00/ex05'
+let g:netrw_dirhist_5='/root/1337/C00'
+let g:netrw_dirhist_4='/root/1337/C00/ex05'
+let g:netrw_dirhist_3='/root/1337/C00'
+let g:netrw_dirhist_2='/root/1337/C00/ex05'
+let g:netrw_dirhist_1='/root/1337/C00'
+let g:netrw_dirhist_0='/root/1337/C00/ex05'
+let g:netrw_dirhist_9='/root/1337/C00'

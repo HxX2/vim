@@ -23,8 +23,8 @@ if (has("autocmd") && !has("gui_running"))
     autocmd!
     let s:none = { "gui": "NONE", "cterm": "NONE", "cterm16": "0" }
     let background = s:none
-    autocmd ColorScheme * call onedark#set_highlight("Terminal", { "bg": s:none }) 
-    autocmd ColorScheme * call onedark#set_highlight("Normal", { "bg": s:none }) 
+    autocmd ColorScheme * call onedark#set_highlight("Terminal", { "bg": s:none })
+    autocmd ColorScheme * call onedark#set_highlight("Normal", { "bg": s:none })
   augroup END
 endif
 
@@ -50,7 +50,7 @@ let g:lightline = {
   \ 'component_function': {
   \   'filetype': 'MyFiletype',
   \   'fileformat': 'MyFileformat',
-  \ }, 
+  \ },
   \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
   \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" },
   \ }
@@ -58,7 +58,7 @@ let g:lightline = {
   function! MyFiletype()
     return winwidth(0) > 70 ? (strlen(&filetype) ? WebDevIconsGetFileTypeSymbol() . ' ' . &filetype : 'no ft') : ''
   endfunction
-  
+
   function! MyFileformat()
     return winwidth(0) > 70 ? ( WebDevIconsGetFileFormatSymbol() . ' ' . &fileformat ) : ''
   endfunction
@@ -78,9 +78,9 @@ inoremap " ""
 inoremap ' ''
 map <silent> <space>e :Explore <CR>
 map <silent> <space>t :rightb vert term <CR>
-map <silent> <F5> :w <CR> :bel term zsh -c "gcc -Wall -Werror -Wextra % -o %< && ./%<" <CR>  
+map <silent> <F5> :w <CR> :bel term zsh -c "gcc -Wall -Werror -Wextra % -o %< && ./%<" <CR>
 map <silent> <space>n :w <CR> :rightb vert term zsh -c "norminette %" <CR>
- 
+
 "==== netrw_conf ====
 
 let g:netrw_keepdir=0

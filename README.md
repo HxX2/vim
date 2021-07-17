@@ -12,8 +12,8 @@ Vim dotfiles
 
 - [About](#about)
   * [Installing](#installing)
-  * [Uninstalling](#uninstalling)
   * [Post-installation](#post-installation)
+  * [Uninstalling](#uninstalling)
 - [Plugins Used](#plugins-used)
 
 <!-- tocstop -->
@@ -28,17 +28,17 @@ Just run the following commands via terminal to get perfectly set up:
 wget https://raw.githubusercontent.com/HxX2/vim/main/setvim.sh ; chmod +x setvim.sh ; ./setvim.sh
 ```
 
+### Post-installation
+
+In the `.vimrc` file line 81 for gcc compiler make sure to change "zsh" to your dafault shell
+
 ### Uninstalling
 
 Run this command to revert back to the old vim configuration:
 
 ```console
-rm -r .vim .vimrc ; mv ~/.vimold ~/.vim ; mv ~/.vimrcold ~/.vimrc
+sudo rm -r .vim .vimrc ; mv ~/.vimold ~/.vim ; mv ~/.vimrcold ~/.vimrc
 ```
-
-### Post-installation
-
-In the `.vimrc` file line 81 for gcc compilet make sure to change "zsh" to your dafault shell
 
 ## Plugins Used
 * [github.com/joshdick/onedark.vim](https://github.com/joshdick/onedark.vim)

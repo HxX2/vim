@@ -15,6 +15,7 @@ set shortmess+=F
 set noshowmode
 set cursorline
 set mouse=a
+set pastetoggle=<F2>
 
 "==== transparent_background ====
 
@@ -71,11 +72,11 @@ set encoding=UTF-8
 
 "==== vim_SKs ====
 
-inoremap { {}
-inoremap [ []
-inoremap ( ()
-inoremap " ""
-inoremap ' ''
+inoremap { {}<ESC>ha
+inoremap [ []<ESC>ha
+inoremap ( ()<ESC>ha
+inoremap " ""<ESC>ha
+inoremap ' ''<ESC>ha
 map <silent> <space>e :Explore <CR>
 map <silent> <space>t :rightb vert term <CR>
 map <silent> <F5> :w <CR> :bel term zsh -c "gcc -Wall -Werror -Wextra % -o %< && ./%<" <CR>

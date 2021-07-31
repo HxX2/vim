@@ -16,6 +16,15 @@ set noshowmode
 set cursorline
 set mouse=a
 set pastetoggle=<F2>
+set noesckeys
+
+"==== number_conf ====
+
+:augroup numbertoggle
+:  autocmd!
+:  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
+:  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
+:augroup END
 
 "==== transparent_background ====
 
@@ -73,6 +82,7 @@ set encoding=UTF-8
 "==== vim_SKs ====
 
 inoremap { {}<ESC>ha
+inoremap {<CR> {<CR><CR>}<ESC>ki<tab>
 inoremap [ []<ESC>ha
 inoremap ( ()<ESC>ha
 inoremap " ""<ESC>ha
